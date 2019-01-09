@@ -15,26 +15,57 @@
 <body style="background-color:#ebebe0">
 	   
 	<!-- A grey horizontal navbar that becomes vertical on small screens -->
-	<nav class="navbar nav-fill nav-pills navbar-expand-sm sticky-top">
+	<!-- <nav class="navbar nav-fill nav-pills navbar-expand-sm sticky-top"> -->
+	<nav class="navbar navbar-expand-sm sticky-top">
 	
 		<a class="navbar-brand" href="#" id="showhome">Landshark Park</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" 
+			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 		
 		<!-- Links -->
-		<ul class="navbar-nav navbar-right ml-auto" style="display: table;">
-			<li class="nav-item px-4" style="display: table-cell; vertical-align: middle;">
-				<a class="nav-link" href="#" id="shownews">News</a>
-			</li>
-			<li class="nav-item px-4" style="display: table-cell; vertical-align: middle;">
-			  <a class="nav-link" href="#" id="showschedule">Schedule</a>
-			</li>
-			<li class="nav-item px-4" style="display: table-cell; vertical-align: middle;">
-			  <a class="nav-link" href="#" id="showresults">Results</a>
-			</li>
-			<li class="nav-item px-4" style="display: table-cell; vertical-align: middle;">
-			  <a class="nav-link" href="#" id="showkd">Kentucky Derby</a>
-			</li>
-		</ul>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav ml-auto" style="display: table;">
+				<div style="display: table-cell; vertical-align: middle;">
+					<a class="nav-item nav-link active px-4" href="#" id="shownews">
+						News <span class="sr-only">(current)</span>
+					</a>
+				</div>
+				<div style="display: table-cell; vertical-align: middle;">
+					<a class="nav-item nav-link active px-4" href="#" id="showschedule">
+						Schedule <span class="sr-only">(current)</span>
+					</a>
+				</div>
+				<div style="display: table-cell; vertical-align: middle;">
+					<a class="nav-item nav-link active px-4" href="#" id="showresults">
+						Results <span class="sr-only">(current)</span>
+					</a>
+				</div>
+				<div style="display: table-cell; vertical-align: middle;">
+					<a class="nav-item nav-link active px-4" href="#" id="showkd">
+						Kentucky Derby <span class="sr-only">(current)</span>
+					</a>
+				</div>
+			</div>
+		</div>
 
+		<!-- 
+		<ul class="navbar-nav navbar-right ml-auto" style="display: table;">
+				<li class="nav-item px-4" style="display: table-cell; vertical-align: middle;">
+					<a class="nav-link" href="#" id="shownews">News</a>
+				</li>
+				<li class="nav-item px-4" style="display: table-cell; vertical-align: middle;">
+				  <a class="nav-link" href="#" id="showschedule">Schedule</a>
+				</li>
+				<li class="nav-item px-4" style="display: table-cell; vertical-align: middle;">
+				  <a class="nav-link" href="#" id="showresults">Results</a>
+				</li>
+				<li class="nav-item px-4" style="display: table-cell; vertical-align: middle;">
+				  <a class="nav-link" href="#" id="showkd">Kentucky Derby</a>
+				</li>
+		</ul>	
+		-->
 	</nav>
 	
 	<div class="container" id="home">
@@ -214,7 +245,10 @@
 			$('#news').hide();
 			$('#schedule').hide();
 			$('#results').hide();			
-		});		
+		});	
+		$('.navbar-nav>a').on('click', function(){
+			$('.navbar-collapse').collapse('hide');
+		});	
 
 	</script>
 

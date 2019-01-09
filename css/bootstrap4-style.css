@@ -1,10 +1,6 @@
 /* Styles go here */
 
-@media(min-width:576px){
-
-}
-
-@media(min-width:768px){
+@media(min-width:0px){
     /* navbar */
     .navbar {
         background-color: #0000ff;
@@ -15,6 +11,40 @@
         font-weight: bold;
         font-size: 1.5em;
     }
+    .navbar .navbar-nav > div > a {
+        color: #00E64D;
+        font-weight: bold;
+        font-size: 1.0em;
+    }
+    .navbar .navbar-nav > div > a:hover,
+    .navbar .navbar-nav > div > a:focus {
+        /* color: #333; */
+        color: #FFFFFF;
+    }
+    .navbar .navbar-nav > .open > div > a,
+    .navbar .navbar-nav > .open > div > a:hover,
+    .navbar .navbar-nav > .open > div > a:focus {
+        color: #00E64D;
+        background-color: #0000ff;
+    }
+    /* Mobile version */
+    .navbar .navbar-toggler {
+        border-color: black;
+        background-color: #00E64D;
+        color: black;
+   }
+    .navbar .navbar-toggle:hover,
+    .navbar .navbar-toggle:focus {
+        color: #00E64D;
+    }
+    /* navbar-toggler-icon 
+    .navbar .navbar-toggler .navbar-toggler-icon {
+        color: #00E64D;
+    }
+    */
+}
+
+@media(min-width:768px){
     /* Title */
     .navbar .navbar-nav {
         color: #00E64D;
@@ -26,27 +56,21 @@
         color: #00E64D;
     }
     /* Link */
-    .navbar .navbar-nav > li > a {
+    /* .navbar .navbar-nav > li > a {  */
+    .navbar .navbar-nav > a {
         color: #00E64D;
         font-weight: bold;
         font-size: 1.0em;
     }
+    /*
     .navbar .navbar-nav > li > a:hover,
     .navbar .navbar-nav > li > a:focus {
-        /* color: #333; */
-        color: #FFFFFF;
-    }
+    */
     .navbar .navbar-nav > .active > a,
     .navbar .navbar-nav > .active > a:hover,
     .navbar .navbar-nav > .active > a:focus {
         color: #555;
         background-color: #E7E7E7;
-    }
-    .navbar .navbar-nav > .open > a,
-    .navbar .navbar-nav > .open > a:hover,
-    .navbar .navbar-nav > .open > a:focus {
-        color: #555;
-        background-color: #D5D5D5;
     }
     /* Caret */
     .navbar .navbar-nav > .dropdown > a .caret {
@@ -79,150 +103,39 @@
 }
 
 @media(min-width:992px){
-    /* navbar */
-    .navbar {
-        background-color: #0000ff;
-        border-color: #000000;
-    }
     .navbar .navbar-brand {
         color: #00E64D;
         font-weight: bold;
         font-size: 1.7em;
     }
-    /* Title */
     .navbar .navbar-nav {
         color: #00E64D;
         font-weight: bold;
         font-size: 1.2em;
     }
-    .navbar .navbar-nav:hover,
-    .navbar .navbar-nav:focus {
-        color: #00E64D;
-    }
-    /* Link */
-    .navbar .navbar-nav > li > a {
+    .navbar .navbar-nav > a {
         color: #00E64D;
         font-weight: bold;
         font-size: 1.2em;
-    }
-    .navbar .navbar-nav > li > a:hover,
-    .navbar .navbar-nav > li > a:focus {
-        /* color: #333; */
-        color: #FFFFFF;
-    }
-    .navbar .navbar-nav > .active > a,
-    .navbar .navbar-nav > .active > a:hover,
-    .navbar .navbar-nav > .active > a:focus {
-        color: #555;
-        background-color: #E7E7E7;
-    }
-    .navbar .navbar-nav > .open > a,
-    .navbar .navbar-nav > .open > a:hover,
-    .navbar .navbar-nav > .open > a:focus {
-        color: #555;
-        background-color: #D5D5D5;
-    }
-    /* Caret */
-    .navbar .navbar-nav > .dropdown > a .caret {
-        border-top-color: #777;
-        border-bottom-color: #777;
-    }
-    .navbar .navbar-nav > .dropdown > a:hover .caret,
-    .navbar .navbar-nav > .dropdown > a:focus .caret {
-        border-top-color: #333;
-        border-bottom-color: #333;
-    }
-    .navbar .navbar-nav > .open > a .caret,
-    .navbar .navbar-nav > .open > a:hover .caret,
-    .navbar .navbar-nav > .open > a:focus .caret {
-        border-top-color: #555;
-        border-bottom-color: #555;
-    }
-    /* Mobile version */
-    .navbar .navbar-toggle {
-        border-color: #DDD;
-    }
-    .navbar .navbar-toggle:hover,
-    .navbar .navbar-toggle:focus {
-        background-color: #DDD;
-    }
-    .navbar .navbar-toggle .icon-bar {
-        background-color: #CCC;
     }
 
 }
 
 @media(min-width:1200px){
-    /* navbar */
-    .navbar {
-        background-color: #0000ff;
-        border-color: #000000;
-    }
     .navbar .navbar-brand {
         color: #00E64D;
         font-weight: bold;
         font-size: 2.5em;
     }
-    /* Title */
     .navbar .navbar-nav {
         color: #00E64D;
         font-weight: bold;
         font-size: 1.3em;
     }
-    .navbar .navbar-nav:hover,
-    .navbar .navbar-nav:focus {
-        color: #00E64D;
-    }
-    /* Link */
-    .navbar .navbar-nav > li > a {
+    .navbar .navbar-nav > a {
         color: #00E64D;
         font-weight: bold;
         font-size: 1.3em;
     }
-    .navbar .navbar-nav > li > a:hover,
-    .navbar .navbar-nav > li > a:focus {
-        /* color: #333; */
-        color: #FFFFFF;
-    }
-    .navbar .navbar-nav > .active > a,
-    .navbar .navbar-nav > .active > a:hover,
-    .navbar .navbar-nav > .active > a:focus {
-        color: #555;
-        background-color: #E7E7E7;
-    }
-    .navbar .navbar-nav > .open > a,
-    .navbar .navbar-nav > .open > a:hover,
-    .navbar .navbar-nav > .open > a:focus {
-        color: #555;
-        background-color: #D5D5D5;
-    }
-    /* Caret */
-    .navbar .navbar-nav > .dropdown > a .caret {
-        border-top-color: #777;
-        border-bottom-color: #777;
-    }
-    .navbar .navbar-nav > .dropdown > a:hover .caret,
-    .navbar .navbar-nav > .dropdown > a:focus .caret {
-        border-top-color: #333;
-        border-bottom-color: #333;
-    }
-    .navbar .navbar-nav > .open > a .caret,
-    .navbar .navbar-nav > .open > a:hover .caret,
-    .navbar .navbar-nav > .open > a:focus .caret {
-        border-top-color: #555;
-        border-bottom-color: #555;
-    }
-    /* Mobile version */
-    .navbar .navbar-toggle {
-        border-color: #DDD;
-    }
-    .navbar .navbar-toggle:hover,
-    .navbar .navbar-toggle:focus {
-        background-color: #DDD;
-    }
-    .navbar .navbar-toggle .icon-bar {
-        background-color: #CCC;
-    }
-
 }
 
